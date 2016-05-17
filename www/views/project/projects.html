@@ -1,0 +1,58 @@
+<ion-view title="Projets">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-loop"></button>
+    <button class="button button-icon icon ion-search" ng-click="showFilterBar()"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <div class="list">
+
+        <a class="item item-avatar" href="#">
+          <div class="circle">
+            <span>R.N</span>
+          </div>
+          <span>15/04/2016</span>
+          <h2>A0235 - Construction Ecole - Maarif</h2>
+          <p>OFFPT</p>
+          <circular-slider
+            class='my-slider'
+            radius='25'
+            shape='Circle'
+            touch="true"
+            animate='true'
+            on-slide='onSlide'
+            on-slide-end='onSlideEnd'
+            min="min"
+            max="200"
+            value="70">
+            70
+          </circular-slider>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <div class="circle">
+            <span>R.N</span>
+          </div>
+          <span>15/04/2016</span>
+          <h2>Contruction immeuble R+4</h2>
+          <p>SILKA Construction sarl</p>
+          <circular-slider class='my-slider' radius='20' touch="true" animate='true' on-slide='onSlide'
+                           on-slide-end='onSlideEnd'> 70 </circular-slider>
+        </a>
+
+        <a class="item item-avatar" href="#">
+          <div class="circle">
+            <span>R.N</span>
+          </div>
+          <span>15/04/2016</span>
+          <h2>Amenagement Residence </h2>
+          <p>SIMA PROMO Sarl</p>
+          <circular-slider class='my-slider' radius='20' touch="true" animate='true' on-slide='onSlide'
+                           on-slide-end='onSlideEnd'> 50 </circular-slider>
+        </a>
+
+      </div>
+  </ion-content>
+</ion-view>
