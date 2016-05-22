@@ -14,3 +14,66 @@
   left: 79px;
   color: #fff;
 }
+
+.label-danger {
+  background-color: #d9534f;
+}
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.user {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  float: left;
+}
+.item-center{
+  float: left;
+  padding-left: 5px;
+}
+.item-center span.item-user{
+  font-size: 10px;
+}
+.item-center h2{
+  font-size: 12px;
+  font-weight: bold;
+}
+.item-center p{
+  font-size: 12px;
+}
+.item-right{
+  float: right;
+  padding-left: 5px;
+}
+.item-right span.date{
+  font-size: 10px;
+  float: left;
+  clear: left;
+
+}
+.item-right span.label {
+  float: left;
+  clear: left;
+}
+.tabs-positive > .tabs, .tabs.tabs-positive {
+  border-color: #5b3777;
+  background-color: #5b3777 !important;
+  background-image: linear-gradient(0deg, #5b3777, #5b3777 50%, transparent 50%) !important;
+  color: #fff;
+}
+.mfb-component__button--main, .mfb-component__button--child {
+  background-color: #5cb85c !important;
+}

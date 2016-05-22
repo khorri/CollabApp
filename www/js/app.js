@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','starter.directives','angular.circular-slider','jett.ionic.filter.bar'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','starter.directives','angular.circular-slider','jett.ionic.filter.bar','ng-mfb'])
 
 .run(function($ionicPlatform,DB) {
   $ionicPlatform.ready(function() {
@@ -51,7 +51,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
       templateUrl: "views/project/projects.html",
       controller: 'ProjectCtrl'
     })*/
-
+    .state('project', {
+      url: "/project",
+      abstract: true,
+      templateUrl: "views/project/project.html"
+    })
+    .state('project.detail', {
+      url: "/detail",
+      views: {
+        'detail-tab': {
+          templateUrl: "views/project/detail.html",
+          controller: 'ProjectCtrl'
+        }
+      }
+    }).state('project.visits', {
+      url: "/visits",
+      views: {
+        'visit-tab': {
+          templateUrl: "views/project/visits.html",
+          controller: 'VisitCtrl'
+        }
+      }
+    }).state('project.visit', {
+      url: "/visit",
+      views: {
+        'visit-tab': {
+          templateUrl: "views/project/visit.html",
+          controller: 'VisitCtrl'
+        }
+      }
+    })
       .state('app', {
         url: "/app",
         abstract: true,
@@ -71,4 +100,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');
 
-});
+}).config(function($ionicConfigProvider){
+    $ionicConfigProvider.tabs.position('bottom');
+  });

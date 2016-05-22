@@ -9,7 +9,7 @@ angular.module('starter.controllers', ['starter.services'])
     };
   })
   // Project control
-  .controller('ProjectCtrl', function($scope,$state,$ionicFilterBar,$ionicPopover) {
+  .controller('ProjectCtrl', function($scope,$state,$ionicFilterBar,$ionicPopover,$ionicHistory) {
     $scope.projects = [{id:'1',name:'project1'},{id:'2',name:"prjects2"}];
     var filterBarInstance;
     $scope.showFilterBar = function () {
@@ -22,6 +22,12 @@ angular.module('starter.controllers', ['starter.services'])
           }
         }
       });
+    };
+
+    $scope.goBack = function(){
+      console.log('go Back')
+      $state.go('app.projects');
+
     };
 
     /*$ionicPopover.fromTemplateUrl('my-popover.html', {
@@ -37,19 +43,13 @@ angular.module('starter.controllers', ['starter.services'])
       $scope.popover.hide();
     };*/
   })
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
+.controller('VisitCtrl', function($scope,$state) {
+    $scope.goBack = function(){
+      console.log('go Back')
+      $state.go('app.projects');
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+    };
+
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
