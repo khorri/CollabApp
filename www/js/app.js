@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','starter.directives','angular.circular-slider','jett.ionic.filter.bar','ng-mfb'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','starter.directives','angular.circular-slider','jett.ionic.filter.bar','ng-mfb','ionic-datepicker'])
 
 .run(function($ionicPlatform,DB) {
   $ionicPlatform.ready(function() {
@@ -70,6 +70,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
         'visit-tab': {
           templateUrl: "views/project/visits.html",
           controller: 'VisitCtrl'
+        },
+        'fabContent': {
+          template: '<button id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-plus"></i></button>',
+          controller: function ($timeout) {
+            /*$timeout(function () {
+             document.getElementById('fab-profile').classList.toggle('on');
+             }, 800);*/
+          }
         }
       }
     }).state('project.visit', {
@@ -77,6 +85,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
       views: {
         'visit-tab': {
           templateUrl: "views/project/visit.html",
+          controller: 'VisitCtrl'
+        }
+      }
+    }).state('project.newvisit', {
+      url: "/newvisit",
+      views: {
+        'visit-tab': {
+          templateUrl: "views/project/newvisit.html",
           controller: 'VisitCtrl'
         }
       }

@@ -13,6 +13,7 @@
         <div class="user margin-right" style="background-image:url('img/ben.png')"></div>
         <div class="item-center">
           <h2>CONTRÔLE DES FONDATIONS</h2>
+
           <p>FONDATIONS IMM C</p>
           <span class="item-user">par Mohamed BENNAN</span>
         </div>
@@ -26,6 +27,7 @@
         <div class="user margin-right" style="background-image:url('img/ben.png')"></div>
         <div class="item-center">
           <h2>CONTRÔLE DES FONDATIONS</h2>
+
           <p>FONDATIONS IMM C</p>
           <span class="item-user">par Mohamed BENNAN</span>
         </div>
@@ -39,6 +41,7 @@
         <div class="user margin-right" style="background-image:url('img/ben.png')"></div>
         <div class="item-center">
           <h2>CONTRÔLE DES FONDATIONS</h2>
+
           <p>FONDATIONS IMM C</p>
           <span class="item-user">par Mohamed BENNAN</span>
         </div>
@@ -49,12 +52,53 @@
       </a>
 
     </div>
-    <nav mfb-menu position="br" effect="zoomin" label="hover here"
-         active-icon="ion-edit" resting-icon="ion-plus-round"
-         toggling-method="click">
-      <button mfb-button icon="paper-airplane" label="menu item"></button>
-    </nav>
-  </ion-content>
 
+
+  </ion-content>
+  <button class="button button-block button-positive button-float" ng-click="openModal()">
+    <i class="icon ion-plus"></i>
+  </button>
 </ion-view>
+
+
+<script id="newvisit.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar align-title="left" class="bar-stable nav-title-slide-ios7">
+
+        <h1 class="title">Nouvelle visite</h1>
+        <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+
+    </ion-header-bar>
+    <ion-content class="has-header">
+      <h2>A0229 CONSTRUCTION IMM S/SO - Visite chantier</h2>
+
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Statut</span>
+          <input type="text">
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Activité
+          </div>
+          <select>
+            <option>CONTRÔLE DES FONDATIONS</option>
+            <option>CONTRÔLE DES LONGRINES</option>
+            <option>CONTRÔLE DES PLANCHERS</option>
+          </select>
+        </label>
+        <label class="item item-input">
+        <span class="input-label">Date</span>
+        <input type="text" ng-click="openDatePicker()">
+      </label>
+        <label class="item item-input">
+          <span class="input-label">Description</span>
+          <textarea name="description"></textarea>
+        </label>
+        <button class="button button-full button-positive" ng-click="">Créer</button>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+
+</script>
 

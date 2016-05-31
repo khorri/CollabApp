@@ -77,3 +77,20 @@
 .mfb-component__button--main, .mfb-component__button--child {
   background-color: #5cb85c !important;
 }
+.button-float{
+  top: auto;
+  left: auto;
+  position: absolute;
+  right: 16px;
+  bottom: 56px;
+  border-radius: 50%;
+  width: 56px !important;
+  height: 56px;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
+  z-index: 9999;
+  transform: translate3d(0%, 0px, 0px);
+  opacity: 1;
+  transition: transform 0.3s, box-shadow;
+  max-height: initial;
+  max-width: initial;
+}
