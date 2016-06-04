@@ -1,21 +1,33 @@
-<ion-view view-title="Détails">
-  <ion-header-bar align-title="left" class="bar-stable nav-title-slide-ios7">
-    <div class="buttons">
+<ion-view view-title="Détails" class="cust-header">
+  <ion-header-bar class="bar-stable nav-title-slide-ios7">
+    <div class="buttons cust-button-back" >
       <button class="button ion-chevron-left" ng-click="goBack()"> Back</button>
     </div>
     <h1 class="title">Détails</h1>
-
   </ion-header-bar>
-  <ion-content class="has-header">
-
-   <h3> A0234TRAVAUX D'AGENCEMENT ET D'AMENAGEMENT DES LOCAUX DE LA CNSS</h3>
-    <p><span class="ion-location"> MAARIF - CASABLANCA</span></p>
-    <p><span class="ion-cash">Budget: 10000.00 DH</span></p>
-    <p><span class="ion-android-happy"> Client: SIGMA TECHNIQUE D'ETANCHEITE</span></p>
-    <p>Date de debut du projet:  13/05/2016</p>
-    <p>Date de fin du projet: 13/05/2017<p>
-    <p>Durée du projet: 12 mois</p>
-    <p><circular-slider
+  <ion-content class="has-header cust-details-content" padding="true">
+    <div class="list card cust-details-list" >
+      <div class="item item-avatar-right cust-resp" > <img src="../../img/mike.png">
+        <p>Chef de projet</p>
+        <h2>NQAIRI REDOUANE</h2>
+      </div>
+    </div>
+    <div class="list cust-details-list" >
+      <div class="item ref">AF1605021116</div>
+      <div class="cust-h1-container">
+        <h1 class="nom">CONTROLE DES TRAVAUX D'AMENAGEMENT DE LA PISTE D'EDUCATION A LA SECURITE ROUTIERE ET DE CONSTRUCTION DES BATIMENTS ANNEXES</h1>
+      </div>
+      <h2 class="client">COMITE NATIONAL DE PREVENTION DES ACCIDENTS DE LA CIRCULATION</h2>
+      <div class="item budget">Budget : 10000.00 DH</div>
+      <div class="delais">
+        <div class="row">
+          <div class="col"><span class="title">Date de debut du projet</span> 13/05/2016</div>
+          <div class="col"><span class="title">Date de fin du projet</span> 13/05/2017</div>
+        </div>
+        <div class="row">
+          <div class="col"><span class="title">Durée du projet</span> 12 mois</div>
+          <div class="col" style="text-align:center">
+            <circular-slider 
       class='my-slider'
       radius='25'
       shape='Circle'
@@ -25,19 +37,34 @@
       on-slide-end='onSlideEnd'
       min="min"
       max="200"
-      value="20">
-      -11
-    </circular-slider></p>
-    <div class="user margin-right" style="background-image:url('img/ben.png')"></div>
-    <p>NQUERI REDOUANE : <small>Chef de projet</small></p>
-    <p><h1>Collaborateur :</h1></p>
-    <p><div class="user margin-right" style="background-image:url('img/mike.png')"></div> BENNAN MOHAMED</p>
-    <p><div class="user margin-right" style="background-image:url('img/max.png')"></div> ABDELMOUNAIM ALMAGHRAOUI</p>
-    <p><h1>Participant :</h1></p>
-    <p>RISK CONTROL sarl</p>
-    <p>RCO MAROC sarl</p>
-    <p>BATIDIOR</p>
-
-
+      value="20"> -11 </circular-slider>
+          </div>
+        </div>
+      </div>
+      <div class="adresse">
+        <p class="item-icon ion-location"></p>
+        <div class="loc">
+          <p class="ville">MAARIF - CASABLANCA</p>
+          <p class="adr">Content for New Div Tag Goes Here Content for New Div Tag Goes Here</p>
+        </div>
+      </div>
+    </div>
+    <div class="card cust-details-list" >
+      <div class="item item-divider"> Collaborateur </div>
+      <div class="item item-avatar cust-collab-avatar"> <img src="../../img/max.png">
+        <h2>BENNAN MOHAMED</h2>
+      </div>
+      <div class="item item-avatar cust-collab-avatar"> <img src="../../img/perry.png">
+        <h2 >ABDELMOUNAIM ALMAGHRAOUI</h2>
+      </div>
+    </div>
+    <div class="card cust-details-list" >
+      <div class="item item-divider"> Participant </div>
+      <div class="item item-text-wrap">
+        <p>RISK CONTROL sarl</p>
+        <p>RCO MAROC sarl</p>
+        <p>BATIDIOR</p>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

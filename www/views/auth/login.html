@@ -1,30 +1,21 @@
-<ion-view class="login-view auth-view" cache-view="false">
-  <ion-content scroll="false">
-    <div class="row">
-      <div class="col col-center">
-        <div class="card login-container" content-tabs tabsdata='tabsdata'>
-          <form name="login_form" class="" novalidate ng-cloak>
 
-
-                <div class="list">
-                  <label class="item item-input">
-                    <input type="email" placeholder="Email" name="user_email" ng-model="user.email" required>
-                  </label>
-                  <label class="item item-input" show-hide-container>
-                    <input type="password" placeholder="Password" name="user_password" ng-model="user.password" required show-hide-input>
-                  </label>
-                </div>
-
-
-            <div class="item item-body bottom-content">
-              <button type="submit" class="button button-positive button-block" ng-click="doLogIn()" ng-disabled="login_form.$invalid">
-                Se connecter
-              </button>
-            </div>
-          </form>
+<ion-view class="login-view auth-view bg-t1" cache-view="false" >
+  <ion-content class="cust-content-login" scroll="true">
+    <div class="cust-login-logo"><img src="../../img/main-logo.png" /></div>
+    <div class="card login-container cust-login-container" >
+      <form name="login_form" class="" novalidate ng-cloak>
+        <div class="list list-inset" style="background-color:transparent">
+          <label class="item item-input">
+            <input type="email" placeholder="Email" name="user_email" ng-model="user.email" required >
+          </label>
+          <label class="item item-input">
+            <input type="password" placeholder="Password" name="user_password" ng-model="user.password" required show-hide-input>
+          </label>
         </div>
-
-      </div>
+        <div class="list list-inset cust-button-login" style="background-color:transparent">
+          <button type="submit" class="button button-block" ng-click="doLogIn()" ng-disabled="login_form.$invalid">Se connecter</button>
+        </div>
+      </form>
     </div>
   </ion-content>
 </ion-view>
