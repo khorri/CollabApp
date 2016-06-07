@@ -6,71 +6,102 @@
     </div>
     <h1 class="title">Visites Chantier</h1>
   </ion-header-bar>
-  
-  
+
+
   <ion-content class="has-header">
-  
 
-<div class="list cust-visites-list" > 
-   
 
- <a class="item item-icon-right" ui-sref="project.visit">
-     
-  <div class="status-1">
-        <h2 class="activite">CONTRÔLE DES FONDATIONS </h2>
-        <p class="desc">FONDATIONS IMM C</p>
-        
-  
-       
+    <div class="list cust-visites-list">
 
-<i class="icon ion-chevron-right icon-accessory"></i></div>
 
-      
-      </a> 
-      
+      <a class="item item-icon-right" ui-sref="project.visit">
+
+        <div class="status-1">
+          <h2 class="activite">CONTRÔLE DES FONDATIONS </h2>
+
+          <p class="desc">FONDATIONS IMM C</p>
+
+
+          <i class="icon ion-chevron-right icon-accessory"></i></div>
+
+
+      </a>
+
       <a class="item item-icon-right " ui-sref="project.visit">
-     
-  <div class="status-3">
-        <h2 class="activite">CONTRÔLE DES FONDATIONS </h2>
-        <p class="desc">FONDATIONS IMM C</p>
-        
-  
-       
 
-<i class="icon ion-chevron-right icon-accessory"></i></div>
+        <div class="status-3">
+          <h2 class="activite">CONTRÔLE DES FONDATIONS </h2>
 
-      
+          <p class="desc">FONDATIONS IMM C</p>
+
+
+          <i class="icon ion-chevron-right icon-accessory"></i></div>
+
+
       </a>
       <a class="item item-icon-right " ui-sref="project.visit">
-     
-  <div class="status-2">
-        <h2 class="activite">CONTRÔLE DES FONDATIONS </h2>
-        <p class="desc">FONDATIONS IMM C</p>
-        
-  
-       
 
-<i class="icon ion-chevron-right icon-accessory"></i></div>
+        <div class="status-2">
+          <h2 class="activite">CONTRÔLE DES FONDATIONS </h2>
 
-      
+          <p class="desc">FONDATIONS IMM C</p>
+
+
+          <i class="icon ion-chevron-right icon-accessory"></i></div>
+
+
       </a>
-      
 
 
-      </div>
-      
-      
-  
-  
-  
-    
+    </div>
 
-  </ion-content>  
-      
-       <nav  mfb-menu position="br" effect="slidein" label="hover here"
-         active-icon="ion-edit" resting-icon="ion-plus-round"
-         toggling-method="click" class="cust-mfb-button">
-      <button mfb-button icon="paper-airplane" label="menu item"></button>
-      
-    </nav>
+
+  </ion-content>
+
+  <button class="button button-block button-positive button-float" ng-click="openModal()">
+    <i class="icon ion-plus"></i>
+  </button>
+
+  </nav>
 </ion-view>
+
+<script id="newvisit.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-header-bar align-title="left" class="bar-stable nav-title-slide-ios7">
+
+      <h1 class="title">Nouvelle visite</h1>
+      <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+
+    </ion-header-bar>
+    <ion-content class="has-header">
+      <h2>A0229 CONSTRUCTION IMM S/SO - Visite chantier</h2>
+
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Statut</span>
+          <input type="text">
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Activité
+          </div>
+          <select>
+            <option>CONTRÔLE DES FONDATIONS</option>
+            <option>CONTRÔLE DES LONGRINES</option>
+            <option>CONTRÔLE DES PLANCHERS</option>
+          </select>
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Date</span>
+          <input type="text" ng-click="openDatePicker()">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Description</span>
+          <textarea name="description"></textarea>
+        </label>
+        <button class="button button-full button-positive" ng-click="">Créer</button>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+
+</script>
