@@ -66,40 +66,44 @@
 </ion-view>
 
 <script id="newvisit.html" type="text/ng-template">
-  <ion-modal-view>
-    <ion-header-bar align-title="left" class="bar-stable nav-title-slide-ios7">
+  <ion-modal-view class="cust-newvisit-modal cust-header">
+    <ion-header-bar align-title="center" class="bar-stable nav-title-slide-ios7 " >
 
       <h1 class="title">Nouvelle visite</h1>
-      <button class="button button-clear button-primary" ng-click="modal.hide()">Annuler</button>
+      <button class="button button-clear button-primary cust-cancel" ng-click="modal.hide()" >Annuler</button>
 
     </ion-header-bar>
-    <ion-content class="has-header">
-      <h2>A0229 CONSTRUCTION IMM S/SO - Visite chantier</h2>
+    <ion-content class="has-header  cust-newvisite-content" >
+      <h1 class="prj" >A0229 CONSTRUCTION IMM S SO - Visite chantier</h1>
 
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Statut</span>
-          <input type="text">
+      <div  class="list card" style="">
+       <label class="item item-input item-select" style="height:30px; ">
+
+          <select>
+            <option class="status-1">STATUS 1</option>
+            <option class="status-2">STATUS 2</option>
+            <option class="status-3">STATUS 3</option>
+          </select>
+	
         </label>
-        <label class="item item-input item-select">
-          <div class="input-label">
-            Activité
-          </div>
+        <label class="item item-input item-select" style="height:30px;text-align: left;  ">
+
           <select>
             <option>CONTRÔLE DES FONDATIONS</option>
             <option>CONTRÔLE DES LONGRINES</option>
             <option>CONTRÔLE DES PLANCHERS</option>
           </select>
+	
         </label>
         <label class="item item-input">
-          <span class="input-label">Date</span>
-          <input type="text" ng-click="openDatePicker()">
+          
+          <input  placeholder="Date" type="text" ng-click="openDatePicker()">
         </label>
         <label class="item item-input">
-          <span class="input-label">Description</span>
-          <textarea name="description"></textarea>
+          
+          <textarea name="description" placeholder="description" maxlength="140" style="height: 60px;resize: none;" ></textarea>
         </label>
-        <button class="button button-full button-positive" ng-click="">Créer</button>
+        <button class="button button-block cust-button-newvisite" ng-click="" style="">Créer</button>
       </div>
     </ion-content>
   </ion-modal-view>

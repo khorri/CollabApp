@@ -1,72 +1,4 @@
-/* Empty. Add your own CSS if you like */
 
-/*
-.label-danger {
-  background-color: #d9534f;
-}
-.label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-}
-.user {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  float: left;
-}
-.item-center{
-  float: left;
-  padding-left: 5px;
-}
-.item-center span.item-user{
-  font-size: 10px;
-}
-.item-center h2{
-  font-size: 12px;
-  font-weight: bold;
-}
-.item-center p{
-  font-size: 12px;
-}
-.item-right{
-  float: right;
-  padding-left: 5px;
-}
-.item-right span.date{
-  font-size: 10px;
-  float: left;
-  clear: left;
-
-}
-.item-right span.label {
-  float: left;
-  clear: left;
-}
-.tabs-positive > .tabs, .tabs.tabs-positive {
-  border-color: #5b3777;
-  background-color: #5b3777 !important;
-  background-image: linear-gradient(0deg, #5b3777, #5b3777 50%, transparent 50%) !important;
-  color: #fff;
-}
-.mfb-component__button--main, .mfb-component__button--child {
-  background-color: #5cb85c !important;
-}
-*/
-
-
-/* --------------------------------------  */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
@@ -98,12 +30,46 @@ input:-webkit-autofill {
   	margin:auto;
  	display:block;
 }
+.cust-content-login .xtra{
+	color:#FFF;
+	font-size:13px;
+	margin:0 auto;
+	width:290px;
+	text-align:center;
+	letter-spacing:1px;
+	padding-top:6px;
+	
+}
+.cust-content-login .xtra a:link,
+.cust-content-login .xtra a:visited{	
+	color:#FFF;
+	text-decoration:none;
+}
+.cust-content-login .xtra a.activated{
+	text-decoration:underline;
+	color:#FFF;
+}
+
+.cust-login-container .msg{
+	background-color:#ffe6ec; 
+	margin-top:10px; 
+	padding:10px; 
+	color:#333; 
+	text-align:center
+
+}
+
+
 .cust-login-container{
 	background-color:#694a83;
-	padding:10px;
+	padding:0px;
 	max-width:300px;
 	margin:0 auto;
 
+}
+
+.cust-login-form {
+	margin:10px;
 }
 .cust-button-login button{
 	background-color:#5cb85c;
@@ -216,23 +182,29 @@ padding-top:10px;
 
 }
 .cust-projects-list .icon{
-	height:75px;
+	height:70px;
 }
-.cust-projects-list h1{
-	font-size:100%;
+.cust-projects-list h1.nom{
+	font-size:80%;
 	padding:0px;
 	margin-top:0px;
 	margin-bottom:0px;
 	color:#633488;
+	line-height:12px;
 }
 .cust-projects-list p.date{
 	margin-bottom:0px;
 	color:#a3a3a3 !important;
 	line-height:12px;
+	font-size:60%;
+	letter-spacing:1px;
 }
 .cust-projects-list p.client{
 	margin-bottom:10px;
 	color:#000 !important;
+	font-size:60%;
+	letter-spacing:1px;	
+	line-height:16px;
 }
 
 .cust-details-content{
@@ -366,11 +338,11 @@ padding-top:10px;
 	padding:8px;
 }
 .cust-visites-list .status-2{
-	border-left:15px solid #a079bf;
+	border-left:15px solid #82366b;
 	padding:8px;
 }
 .cust-visites-list .status-3{
-	border-left:15px solid #5b3777;
+	border-left:15px solid #ada948;
 	padding:8px;
 }
 
@@ -379,11 +351,27 @@ padding-top:10px;
 
 
 }
+.cust-visite-header {
+	background-color:#583574 !important;
+}
 .cust-visites-list h2.activite{
 	font-size:1.1em;
 	color:#583574
 }
+.cust-visite-button-bar {
+	max-width:200px;
+	min-width:200px;	
+	position:absolute;
+	right:10px;	
+	
+}
 
+.cust-visite-button-bar a::before {
+	font-size:22px !important;
+	color:#FFF !important
+	
+
+}
 .cust-visite-content{
 	background-color:#623387 !important;
 }
@@ -436,17 +424,18 @@ padding-top:10px;
 }
 
 .cust-visite-list .status-2{
-	background-color:#a079bf;
+	background-color:#82366b;
 	color:#FFF;
 	font-size:1.5em;
 	text-align:center;
 }
 
 .cust-visite-list .status-3{
-	background-color:#5b3777;
+	background-color:#ada948;
 	color:#FFF;
 	font-size:1.5em;
 	text-align:center;
+	padding:8px;
 
 }
 .cust-visite-list .cust-photos-grid{
@@ -539,16 +528,7 @@ tab-item.activated{
 	color:#FFF !important;
 }
 
-/*
-.cust-avatar {
-	border:none;
-	padding-left:55px;
-}
-.cust-avatar img{
-	left:1px !important;
 
-}
-*/
 
 .button-float{
   top: auto;
@@ -568,3 +548,90 @@ tab-item.activated{
   max-width: initial;
   background-color:#5b3777 !important;
 }
+
+.filter-bar .bar.bar-stable{
+	background-color:#452163 !important;
+	border:none;
+	/* 	background-color:#694a83; */
+}
+
+.filter-bar .filter-bar-cancel {
+	color:#FFF !important;
+	font-size:12px !important;
+	letter-spacing:1px;
+}
+
+.filter-bar .filter-bar-search {
+	padding-left:0px;
+	color:#452163 !important;
+}
+
+.filter-bar .icon{
+	color:#452163 !important;
+	padding-right:0px;
+	
+}
+.cust-newvisit-modal{
+	background-color:#623387; 
+}
+
+.cust-newvisit-modal .cust-cancel {
+	color:#FFF !important;
+	font-size:12px !important;
+	letter-spacing:1px;
+}
+
+.cust-newvisite-content h1.prj{
+	font-size:15px;
+	margin:15px; 
+	color:#FFF	
+}
+
+.cust-newvisite-content button{
+	background-color:#5cb85c; 
+	color:#FFF; 
+	width:95%; 
+	margin:0 auto; 
+	margin-top:10px; 
+	margin-bottom:10px;
+}
+ button.cust-button-newvisite:hover,
+ button.cust-button-newvisite.activated{
+	background-color:#3b933b;
+	color:#FFF;
+}
+
+
+.cust-newvisite-content select{
+	max-width: 100%;
+	width: 100%;  
+	position:relative; 
+	position:absolute; 
+	left:0px; 
+	direction:ltr;
+	font-size:14px;
+	
+}
+
+
+.cust-newvisite-content select option.status-1{
+	background-color:#dbcae9;
+	color:#FFF	
+}
+.cust-newvisite-content select option.status-2{
+	background-color:#82366b;	
+	color:#FFF
+}
+.cust-newvisite-content select option.status-3{
+	background-color:#ada948;
+	color:#FFF	
+}
+
+.cust-newvisite-content input,
+.cust-newvisite-content textarea,
+.cust-newvisite-content input
+{
+	font-size:14px;
+}
+
+
