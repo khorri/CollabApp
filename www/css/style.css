@@ -1,5 +1,4 @@
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100);
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
@@ -136,7 +135,7 @@ padding-top:10px;
 	display:block;
 	width:100%;
 	background-color:transparent;
-	font-family: 'Lato', sans-serif;
+	font-family: Tahoma, Geneva, sans-serif;
 	border:none;
 	font-weight:300;
 	letter-spacing: 2px;
@@ -635,3 +634,228 @@ tab-item.activated{
 }
 
 
+/* ----------- Start checkbox and radion buttons ------------*/
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 0em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  padding-right  : .5em;
+  line-height  : 2.3em;
+  font-size:.7em;
+  color:#623387 !important;
+
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 1.55em;
+  height           : 1.58em;
+  margin           : 0.25em .3em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+  
+  
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(86,44,116);
+  font-size   : 1.4em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 1em;
+  height           : 1em;
+  margin-top       : .2em;
+  margin-left	   : .19em; 
+  border           : 0.0625em solid rgb(86,44,116);
+  border-radius    : 0.125em;
+  background       : rgb(134,57,189);
+  background-image :    -moz-linear-gradient(rgb(102,57,134),rgb(134,57,189));
+  background-image :     -ms-linear-gradient(rgb(102,57,134),rgb(134,57,189));
+  background-image :      -o-linear-gradient(rgb(102,57,134),rgb(134,57,189));
+  background-image : -webkit-linear-gradient(rgb(102,57,134),rgb(134,57,189));
+  background-image :         linear-gradient(rgb(102,57,134),rgb(134,57,189));
+}
+
+
+/* ----------- End checkbox and radion buttons ------------*/
+
+/* --------------------------- Start Custom Forme --------------------------- */
+
+h1.cust-form-title{
+	font-size:1.2em;
+	text-align:center;
+	color:#FFF;
+	margin:0px 10px 10px 10px;
+	padding:0px;
+	font-family:Tahoma, Geneva, sans-serif;	
+}
+h2.cust-form-subtitle{
+	font-size:.9em;
+	text-align:center;
+	font-weight:100;
+	color:#FFF;
+	margin:0px;
+	padding:0px;	
+	font-family:Tahoma, Geneva, sans-serif;
+}
+.cust-form-content{
+	background-color:#623387;
+	color:#623387 !important;
+	height:100%;
+
+}
+.cust-form-content p.nrml{
+	color:#623387 !important;
+	font-size:.8em;
+}
+
+
+.cust-form-content .item-divider .title{
+	color:#623387 !important;
+	font-size:1em;
+	text-align:center;	
+}
+.cust-form-content .cust-stacked-label {
+	color:#adadad;
+	padding-left:.5em
+}
+
+.cust-form-content .cust-stacked-label span {
+	color: #999999;
+	margin: 0px;
+	padding: 0px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;	
+}
+
+
+.cust-form-content .cust-stacked-label input,
+.cust-form-content .cust-textarea
+ {
+	color:#623387 !important;
+	font-size:1.1em;
+	margin:0px;
+	padding:0px;
+	height:1.3em;
+}
+.cust-form-content .cust-textarea
+{
+  width:100%;  
+  background-color:#F5F5F5 ;
+  min-height:6em;
+  resize:none;
+  font-size:.8em
+}
+
+.cust-form-content .cust-stacked-label input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #cbace4;
+}
+.cust-form-content .cust-stacked-label input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #cbace4;
+   opacity:  1;
+}
+.cust-form-content .cust-stacked-label input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #cbace4;
+   opacity:  1;
+}
+.cust-form-content .cust-stacked-label input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #cbace4;
+}
+
+.cust-form-content .cust-stacked-c-title {
+	color:#adadad;
+	margin:0px;
+	padding:0px;
+	font-size:.8em;
+}
+.cust-form-content .cust-stacked-c-text{
+	color:#623387 !important;
+	font-size:.8em;
+	margin:0px;
+	padding:0px;
+}
+
+.cust-form-content .cust-stacked-c-title-large {
+	color:#adadad;
+	margin:0px;
+	padding:0px;
+	font-size:1em;
+}
+.cust-form-content .cust-stacked-c-text-large{
+	color:#623387 !important;
+	font-size:1.1em;
+	margin:0px;
+	padding:0px;
+}
+
+.cust-form-content .section{
+	clear:both;
+	text-align:center;
+	background-image:url(../../img/bg-t2.jpg);
+	color:#FFF;
+	font-size:1em;
+	text-transform:uppercase;
+}
+
+.cust-form-content ul.cust-list{
+	font-size:.8em; 
+	line-height:1.1em; 
+	padding:5px;
+	color:#623387 !important;
+
+}
+
+.cust-form-content ul.cust-list li{
+	list-style:disc;
+	margin:10px 10px 10px 20px;	
+}
+
+
+.cust-button-block{
+	background-color:#d5c6e1 !important;
+	color:#623387 !important;	
+}
+.cust-button-block.activated{
+	background-color:#623387 !important;
+	color:#FFF !important;	
+}
+
+/* ---------------------------- End Custom Forme --------------------------- */

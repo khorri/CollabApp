@@ -112,6 +112,88 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
           }
         }
       });
+	  
+	  
+	  
+	  
+	  $stateProvider.state('app.fiches', {
+        url: "/fiches",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiches.html"
+            
+          }
+        }
+      });
+	  $stateProvider.state('app.fiche_cdr', {
+        url: "/fiche_cdr",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cdr.html"
+            
+          }
+        }
+      });
+	  
+	   $stateProvider.state('app.fiche_cet', {
+        url: "/fiche_cet",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cet.html"
+            
+          }
+        }
+      });
+	  
+	  $stateProvider.state('app.fiche_cdf', {
+        url: "/fiche_cdf",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cdf.html"
+            
+          }
+        }
+      });
+	  $stateProvider.state('app.fiche_cgo', {
+        url: "/fiche_cgo",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cgo.html"
+            
+          }
+        }
+      });
+	  
+	  $stateProvider.state('app.fiche_cdl', {
+        url: "/fiche_cdl",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cdl.html"
+            
+          }
+        }
+      });
+	  
+	  $stateProvider.state('app.fiche_cdp', {
+        url: "/fiche_cdp",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cdp.html"
+            
+          }
+        }
+      });
+	  
+	  $stateProvider.state('app.fiche_cdpo', {
+        url: "/fiche_cdpo",
+        views: {
+          'menuContent' :{
+            templateUrl: "views/fiches/fiche_cdpo.html"
+            
+          }
+        }
+      });
+	  
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');
