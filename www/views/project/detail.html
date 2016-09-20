@@ -1,11 +1,15 @@
-<ion-view view-title="Détails" class="cust-header">
-  <ion-header-bar class="bar-stable nav-title-slide-ios7">
-    <div class="buttons cust-button-back" >
-      <button class="button ion-chevron-left" ng-click="goBack()"> Back</button>
+<ion-view view-title="Détails" class="cust-details-content ">
+
+
+  <ion-header-bar class="header cust-header" align-title="left" >
+    <div class="buttons">
+      <div class="buttons cust-button-back"> <a class="button ion-chevron-left" href="#/app/projects"> Retour</a> </div>
     </div>
-    <h1 class="title">Détails</h1>
+    <h1 class="title cust-header-back-title">Détails</h1>
   </ion-header-bar>
-  <ion-content class="has-header cust-details-content" padding="true">
+
+  
+  <ion-content class="has-header"  padding="true" scroll="true">
     <div class="list card cust-details-list" >
       <div class="item item-avatar-right cust-resp" > <img src="../../img/mike.png">
         <p>Chef de projet</p>

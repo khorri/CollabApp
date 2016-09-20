@@ -1,4 +1,4 @@
-// Ionic Starter App
+	// Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
@@ -6,6 +6,34 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','starter.directives','angular.circular-slider','jett.ionic.filter.bar','ng-mfb','ionic-datepicker'])
+
+.controller('MyCtrl', function($scope) {
+  $scope.groups = [];
+  
+ 
+ 
+ 
+
+  
+$scope.toggleGroup = function(group) {
+	if ($scope.isGroupShown(group)) {
+		$scope.shownGroup = null;
+	} else {
+		$scope.shownGroup = group;
+	}
+};
+
+$scope.isGroupShown = function(group) {
+	return $scope.shownGroup === group;
+};
+
+
+
+
+
+})
+
+
 
 .run(function($ionicPlatform,DB) {
   $ionicPlatform.ready(function() {
@@ -194,6 +222,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
         }
       });
 	  
+
+	  
+
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');

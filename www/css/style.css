@@ -1,4 +1,7 @@
 
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
@@ -83,12 +86,41 @@ input:-webkit-autofill {
 
 
 
-.cust-header ion-header-bar {
-	background-color:#583574 !important;
+ion-header-bar.cust-header {
+/* 	background-color:#583574 !important; */
+	background:none !important;
+	color:#000 !important
+}
+ion-header-bar.cust-header-dark   {
 
+	 background: rgba(0, 0, 0, 0.1) !important; 
 }
 
-.cust-header .title, .icon {
+.cust-header h1.cust-header-menu-title{
+	font-size:.9em !important;
+	color:#FFF;
+	padding:0px !important;
+	margin:0px !important;
+	left:45px !important;
+	text-transform:uppercase !important;
+}
+.cust-header h1.cust-header-back-title{
+	font-size:.9em !important;
+	color:#FFF;
+	padding:0px !important;
+	margin:0px !important;
+	left:78px !important;
+}
+
+.cust-header h1.cust-header-title{
+	font-size:.9em !important;
+	color:#FFF;
+	padding:0px !important;
+	margin:0px !important;
+	left:45px !important;
+}
+
+.cust-header .icon {
 	color:#FFF !important;
 }
 
@@ -110,9 +142,8 @@ input:-webkit-autofill {
 
 
 
-.cust-content {
-	background-color:#291638 !important;
-	background: url(../img/bg-t1.gif) no-repeat center center fixed;
+.cust-menu-content {
+	background: url(../img/bg-t6.jpg) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -135,7 +166,7 @@ padding-top:10px;
 	display:block;
 	width:100%;
 	background-color:transparent;
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	border:none;
 	font-weight:300;
 	letter-spacing: 2px;
@@ -167,6 +198,20 @@ padding-top:10px;
 	float:left;
 	padding-left:20px;
 	padding-right:12px;
+}
+
+.cust-projects-content{
+	background-color:#f8f8f8;
+	color:#623387 !important;	
+	background: url(../../img/bg-t5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+.cust-projects-content .list .item{
+	background-color: rgba(255, 255, 255, 1);
+	border-color:#8c9eda;	
 }
 .cust-projects-list{
 
@@ -207,7 +252,12 @@ padding-top:10px;
 }
 
 .cust-details-content{
-	background-color:#623387
+	color:#623387 !important;	
+	background: url(../../img/bg-t5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
 }
 .cust-details-list{
 	margin:0px;
@@ -325,8 +375,19 @@ padding-top:10px;
 	padding-top : 8px;
 }
 
+.cust-visites-content{
 
-.cust-visites-list .item{
+	color:#623387 !important;	
+	background: url(../../img/bg-t5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+.cust-visites-content .list .item{
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color:#FFF;	
 	padding:0px;
 }
 .cust-visites-list .item .icon{
@@ -350,9 +411,28 @@ padding-top:10px;
 
 
 }
+
+.cust-visite-content{
+	background-color:#f8f8f8;
+	color:#623387 !important;	
+	background: url(../../img/bg-t5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+
+
+
 .cust-visite-header {
 	background-color:#583574 !important;
 }
+
+.cust-visites-list{
+	background:none !important;
+}
+
 .cust-visites-list h2.activite{
 	font-size:1.1em;
 	color:#583574
@@ -442,13 +522,7 @@ padding-top:10px;
 }
 .cust-visite-list .cust-photos-grid .col{
 	height:150px;
-
-
 }
-
-
-
-
 
 
 
@@ -461,15 +535,18 @@ padding-top:10px;
 
 .cust-button-back .button,
 .cust-button-back button {
-	background-color:#583574 !important;
+/* 	background-color:#583574 !important; */
+	background:none !important;
+	border:1px solid #FFF;
 	color:#FFF !important;
 }
 
 .cust-button-back .button.activated,
 .cust-button-back button.activated {
-	background-color:#6a4a83 !important;
-	color:#FFF !important;
-
+/* 	background-color:#6a4a83 !important;
+	color:#FFF !important; */
+	background-color:#FFF !important;
+	color:#7a85bd !important; 
 }
 
 .cust-button-back .button:after {
@@ -491,14 +568,14 @@ padding-top:10px;
 }
 .cust-project-tab .tab-nav {
 	background-color:#FFF !important;
-	border-top: 1px solid #583574 !important;
+	border-top: 1px solid #91a4dc !important;
 	background: none !important;
 }
 
 
 .cust-project-tab a,
 .cust-project-tab a .icon {
-	color:#583574 !important;
+	color:#FFF !important;
 
 }
 .cust-project-tab a.tab-item tab-item-active{
@@ -634,97 +711,50 @@ tab-item.activated{
 }
 
 
-/* ----------- Start checkbox and radion buttons ------------*/
-
-input[type=checkbox]:not(old),
-input[type=radio   ]:not(old){
-  width     : 0em;
-  margin    : 0;
-  padding   : 0;
-  font-size : 1em;
-  opacity   : 0;
-
+.cust-fiches-content{
+	background-color:#f8f8f8;
+	color:#623387 !important;	
+	background: url(../../img/bg-t5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+.cust-fiches-content .list .item{
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color:#FFF;	
+}
+.cust-fiches-content h1.option{
+	color:#585d8d !important;	
+	padding:0px;
+	margin:0px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size:.7em !important;
+} 
+.cust-fiches-content .list .item p{
+	color:#FFF !important;
+}
+.cust-fiches-content .list .item i{
+	color:#FFF !important;
+	font-size:1.2em
 }
 
-input[type=checkbox]:not(old) + label,
-input[type=radio   ]:not(old) + label{
-  display      : inline-block;
-  padding-right  : .5em;
-  line-height  : 2.3em;
-  font-size:.7em;
-  color:#623387 !important;
-
-}
-
-input[type=checkbox]:not(old) + label > span,
-input[type=radio   ]:not(old) + label > span{
-  display          : inline-block;
-  width            : 1.55em;
-  height           : 1.58em;
-  margin           : 0.25em .3em 0.25em 0.25em;
-  border           : 0.0625em solid rgb(192,192,192);
-  border-radius    : 0.25em;
-  background       : rgb(224,224,224);
-  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  vertical-align   : bottom;
-  
-  
-}
-
-input[type=checkbox]:not(old):checked + label > span,
-input[type=radio   ]:not(old):checked + label > span{
-  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  
-}
-
-input[type=checkbox]:not(old):checked + label > span:before{
-  content     : '✓';
-  display     : block;
-  width       : 1em;
-  color       : rgb(86,44,116);
-  font-size   : 1.4em;
-  line-height : 1em;
-  text-align  : center;
-  text-shadow : 0 0 0.0714em rgb(115,153,77);
-  font-weight : bold;
-}
-
-input[type=radio]:not(old):checked +  label > span > span{
-  display          : block;
-  width            : 1em;
-  height           : 1em;
-  margin-top       : .2em;
-  margin-left	   : .19em; 
-  border           : 0.0625em solid rgb(86,44,116);
-  border-radius    : 0.125em;
-  background       : rgb(134,57,189);
-  background-image :    -moz-linear-gradient(rgb(102,57,134),rgb(134,57,189));
-  background-image :     -ms-linear-gradient(rgb(102,57,134),rgb(134,57,189));
-  background-image :      -o-linear-gradient(rgb(102,57,134),rgb(134,57,189));
-  background-image : -webkit-linear-gradient(rgb(102,57,134),rgb(134,57,189));
-  background-image :         linear-gradient(rgb(102,57,134),rgb(134,57,189));
-}
-
-
-/* ----------- End checkbox and radion buttons ------------*/
 
 /* --------------------------- Start Custom Forme --------------------------- */
+
+.cust-form-content .list .cust-item{
+	background:none !important;
+	border:none !important;
+}
+
 
 h1.cust-form-title{
 	font-size:1.2em;
 	text-align:center;
 	color:#FFF;
-	margin:0px 10px 10px 10px;
+	margin:10px 10px 10px 10px;
 	padding:0px;
-	font-family:Tahoma, Geneva, sans-serif;	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 h2.cust-form-subtitle{
 	font-size:.9em;
@@ -733,19 +763,63 @@ h2.cust-form-subtitle{
 	color:#FFF;
 	margin:0px;
 	padding:0px;	
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 .cust-form-content{
-	background-color:#623387;
-	color:#623387 !important;
-	height:100%;
-
+	background-color:#f8f8f8;
+	color:#623387 !important;	
+	background: url(../../img/bg-t5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
 }
+
+
+.cust-form-content .header-item{
+	background-color:#F60 !important;
+} 
+
+
+
+.cust-form-content .section
+{
+	border:none;
+	width:100%;
+	margin:0px;	
+	text-align:left;
+	background:none !important;
+	color:#FFF;
+	font-size:1em;
+	text-transform:uppercase;
+	padding:10px 22px 2px 15px; 
+}
+.cust-form-content .cust-inline{
+	background: rgba(255, 255, 255, 0.3) !important; 
+	border:none;
+	color:#FFF !important;
+	width:100%;
+	text-align:left;
+	border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  font-size:.9em;
+}
+.cust-form-content .cust-inline .item-note{
+	color:#FFF !important;
+}
+
+
 .cust-form-content p.nrml{
 	color:#623387 !important;
 	font-size:.8em;
 }
 
+.cust-form-content .list .item-trans{
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color:#FFF;
+	
+	
+}
 
 .cust-form-content .item-divider .title{
 	color:#623387 !important;
@@ -754,7 +828,7 @@ h2.cust-form-subtitle{
 }
 .cust-form-content .cust-stacked-label {
 	color:#adadad;
-	padding-left:.5em
+
 }
 
 .cust-form-content .cust-stacked-label span {
@@ -770,34 +844,41 @@ h2.cust-form-subtitle{
 .cust-form-content .cust-stacked-label input,
 .cust-form-content .cust-textarea
  {
-	color:#623387 !important;
+	border-bottom:1px solid #FFF;
 	font-size:1.1em;
 	margin:0px;
 	padding:0px;
 	height:1.3em;
+	background:none !important;
+	width:100%;
+	color:#FFF !important;
+	padding-bottom:.5em;
 }
+
+
+
 .cust-form-content .cust-textarea
 {
   width:100%;  
-  background-color:#F5F5F5 ;
+  background:none !important;
   min-height:6em;
   resize:none;
   font-size:.8em
 }
 
 .cust-form-content .cust-stacked-label input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #cbace4;
+    color:    #4a577e;
 }
 .cust-form-content .cust-stacked-label input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #cbace4;
+   color:    #4a577e;
    opacity:  1;
 }
 .cust-form-content .cust-stacked-label input::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #cbace4;
+   color:    #4a577e;
    opacity:  1;
 }
 .cust-form-content .cust-stacked-label input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #cbace4;
+   color:    #4a577e;
 }
 
 .cust-form-content .cust-stacked-c-title {
@@ -826,14 +907,10 @@ h2.cust-form-subtitle{
 	padding:0px;
 }
 
-.cust-form-content .section{
-	clear:both;
-	text-align:center;
-	background-image:url(../../img/bg-t2.jpg);
-	color:#FFF;
-	font-size:1em;
-	text-transform:uppercase;
-}
+
+
+
+
 
 .cust-form-content ul.cust-list{
 	font-size:.8em; 
@@ -859,3 +936,120 @@ h2.cust-form-subtitle{
 }
 
 /* ---------------------------- End Custom Forme --------------------------- */
+
+/* ---------------------------- Start According list --------------------------- */
+
+
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.accordion-header {
+	font-size:.8em;	
+	color:#623387;	
+	text-transform:uppercase;	
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color:#FFF;
+	border:none !important; 
+	border-bottom:#8f9ad9 solid 1px !important;
+	 margin: 0px;
+}
+.list .item.item-accordion .icon{
+	color:#FFF !important;
+	background:none !important;
+}
+
+.list .item.item-accordion.accordion-content {
+	font-size:.9em;	
+	 background-color: rgba(98, 51, 135, .2);
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;     
+	border:none !important;
+	padding:0px;  
+}
+.list .item.item-accordion.accordion-content .radio-content {
+	background:none;
+	color:#FFF;
+	font-size:.8em;
+}
+.list .item-accordion.accordion-content .item-content{
+	background-color: rgba(255, 255, 255, 0.1);
+	border:none !important;
+}
+
+.list .item-accordion.accordion-content .item-radio{
+	background:none;
+	border:none !important;
+}
+.list .item-accordion.accordion-content .item-radio input:checked + .radio-content .item-content{
+	background-color: rgba(255, 255, 255, 0.4);
+	border:none !important;
+}
+
+.list .item.item-accordion.accordion-content .ion-checkmark {
+	color:#7779be !important;
+	font-size:1.3em !important;	
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+  
+}
+.list .item.item-accordion.active {
+/*   background-color:#623387 !important; */
+  background-color: rgba(98, 51, 135, .3);
+  color:#FFF;	
+}
+.list .item.item-accordion i{
+	color:#333 !important;
+	font-size:.7em;	
+}
+.list .item.item-accordion.active i{
+  color:#FFF !important;	
+}
+/* ---------------------------- End According list --------------------------- */
+
+/* ---------------------------- Start Slider --------------------------- */
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 10px;
+  color: #000;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+/* ---------------------------- End Slider --------------------------- */
